@@ -19,7 +19,7 @@ train_data = pd.read_csv(data_path + "mnist_train.csv",header=None)
                          
 # Prime factors - 784:    1,   2,   4,   7,  8, 14, 16, 28
                     #   784, 392, 196, 112, 98, 56, 49, 28
-T = 4       
+T = 1       
      
 epochs = 1 
 batch_size = 100
