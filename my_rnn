@@ -9,7 +9,7 @@ Created on Mon Apr 13 13:28:02 2020
 #%% Import
 import numpy as np
 import pandas as pd
-from basic_rnn7 import BasicRNN
+from basic_rnn import BasicRNN
 import keras
 #%% Load
 data_path = ("/home/paul/Documents/Research/Keras/MNIST/")
