@@ -11,8 +11,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-data_path = ("/home/paul/Documents/Research/Keras/MNIST/")
-weight_path = ("/home/paul/Documents/Research/Keras/MNIST/weights_VANILLA/Row_By_Row/")
 
 class BasicRNN:
 ### prelim
@@ -25,14 +23,7 @@ class BasicRNN:
         self.W_hh = np.random.normal(0, var/n, [n,n])                 
         self.V_h = np.random.normal(0, 1/input_dim, [n,input_dim])                     
         self.b_h = np.zeros([n,1])                     
- 
-        #### PRELOADED WEIGHTS      
-#        W_oh = np.transpose(pd.read_csv(weight_path + "weights_VANILLA_Woh.csv", header=None))
-#        W_hh = np.transpose(pd.read_csv(weight_path + "weights_VANILLA_Whh.csv", header=None))
-#        V_h = np.transpose(pd.read_csv(weight_path + "weights_VANILLA_Vh.csv", header=None))
-#        b_h = pd.read_csv(weight_path + "weights_VANILLA_bh.csv", header=None)        
-#        self.W_oh, self.W_hh, self.V_h, self.b_h = np.array(W_oh), np.array(W_hh), np.array(V_h), np.array(b_h)
-        
+         
         self.e = e
         self.n = n
         self.learning_rate = learning_rate
