@@ -22,8 +22,8 @@ train_data = pd.read_csv(data_path + "mnist_train.csv", header=None)
                     #   784, 392, 196, 112, 98, 56, 49, 28
 T = 1       
      
-epochs = 10 
-batch_size = 6000
+epochs = 1 
+batch_size = 600
 classes = 10
 
 m = int(784/T)                         
